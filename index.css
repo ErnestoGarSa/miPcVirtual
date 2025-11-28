@@ -1,5 +1,4 @@
-   /* Estilos generales */
- * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -69,8 +68,7 @@
             transform: translateY(-3px);
             box-shadow: var(--shadow);
         }
-        
-        /* Header */
+
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -130,8 +128,38 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
-        /* Hero Section */
+
+        /* BOTÓN ACCESO */
+.btn-acceso {
+  padding: 8px 16px;
+  background-color: #0077ff;
+  color: white !important;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-acceso:hover {
+  background-color: #005fcc;
+}
+
+
+.btn-musica {
+  background: #4a78ff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-musica:hover {
+  background: #335fe0;
+}
+
+
+         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.85)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
@@ -152,48 +180,118 @@
             max-width: 700px;
             margin: 0 auto 30px;
         }
+
+        /* SECCIÓN SOBRE MIPC */
+.sobre-mipc {
+  padding: 60px 20px;
+  background: #f7f9fc;
+}
+
+.sobre-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-texto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.sobre-texto span {
+  color: #0077ff;
+  font-weight: bold;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sobre-imagenes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.sobre-imagenes img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
         
-        /* Sección de Misión, Visión y Políticas */
-        .about-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .about-card {
-            background-color: var(--light);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s;
-        }
-        
-        .about-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .about-card h3 {
-            margin-bottom: 20px;
-            color: var(--primary);
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .about-card h3 i {
-            color: var(--secondary);
-        }
-        
-        /* Sección de Video */
+/* TARJETAS */
+.mipc-servicios {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sobre-content {
+    text-align: center;
+  }
+
+  .sobre-texto h2 {
+    text-align: center;
+  }
+
+  .sobre-imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+      
+
+ /* Sección de Video */
         .video-section {
             background-color: white;
             border-radius: 10px;
@@ -255,76 +353,8 @@
       .video-placeholder:hover {
         transform: scale(1.02);
       }
-        
-        /* Sección de Música */
-        .music-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .music-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 8px;
-        }
-        
-        .music-placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            width: 100%;
-            max-width: 500px;
-        }
-        
-        .music-icon {
-            font-size: 3rem;
-            color: var(--secondary);
-        }
 
-
-      /* Estilos para el botón de música */
-       /* Estilos para el botón de música */
-      .music-toggle-btn {
-        background-color: var(--secondary);
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: all 0.3s ease;
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-      }
-      
-      .music-toggle-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      }
-      
-      .music-toggle-btn.playing {
-        background-color: #dc3545; /* Rojo cuando está reproduciendo */
-      }
-      
-      .music-status {
-        margin-top: 10px;
-        font-style: italic;
-        color: #666;
-        text-align: center;
-      }
-        
-        /* Sección de Servicios/Catálogo */
+       /* Sección de Servicios/Catálogo */
         .services {
             background-color: white;
             border-radius: 10px;
@@ -362,8 +392,8 @@
             margin-bottom: 15px;
             color: var(--primary);
         }
-        
-        /* Sección de Computadoras */
+
+         /* Sección de Computadoras */
         .computers-section {
             background-color: white;
             border-radius: 10px;
@@ -417,8 +447,42 @@
     object-fit: cover; /* mantiene proporción y no deforma */
     border-radius: 10px;
 }
-        
-        /* Sección de Ubicación */
+
+ /* Estilos para el botón de música */
+       /* Estilos para el botón de música */
+      .music-toggle-btn {
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      
+      .music-toggle-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      
+      .music-toggle-btn.playing {
+        background-color: #dc3545; /* Rojo cuando está reproduciendo */
+      }
+      
+      .music-status {
+        margin-top: 10px;
+        font-style: italic;
+        color: #666;
+        text-align: center;
+      }
+
+ /* Sección de Ubicación */
         .location-section {
             background-color: white;
             border-radius: 10px;
@@ -449,125 +513,8 @@
             flex-direction: column;
             justify-content: center;
         }
-        
-        /* Sección de Login */
-        .login-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .login-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 8px;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        
-        /* Sección de Contacto */
-        .contact-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        
-        .contact-form {
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 8px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--secondary);
-        }
-        
-        /* Sección de FAQ */
-        .faq-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            padding: 15px 20px;
-            background-color: var(--light);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 500;
-        }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        /* Footer */
+
+         /* Footer */
         footer {
             background-color: var(--primary);
             color: white;
@@ -611,43 +558,4 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 0.9rem;
             color: #bdc3c7;
-        }
-        
-       
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-            }
-            
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-            
-            .location-container,
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .mobile-menu {
-                display: none;
-            }
-            
-            .mobile-menu.active {
-                display: block;
-                width: 100%;
-                margin-top: 15px;
-            }
         }

@@ -4,31 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mipc Virtual - Soluciones Digitales Innovadoras</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="container header-container">
-        <div class="logo">
-          <h1>Mipc <span>Virtual</span></h1>
-        </div>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-        <nav class="mobile-menu" id="mobileMenu">
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#mision-vision">Misión y Visión</a></li>
-            <li><a href="#video">Video Corporativo</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#computadoras">Equipos</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#login">Acceso</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <div class="container header-container">
+    <div class="logo">
+      <h1>Mipc <span>Virtual</span></h1>
+    </div>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+    <nav class="menu" id="mobileMenu">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./mision.html">Misión</a></li>
+        <li><a href="./vision.html">Visión</a></li>
+        <li><a href="./politicas.html">Políticas de Calidad</a></li>
+        <li><a href="./ubicacion.html">Ubicación</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+
+        <!-- BOTÓN DE ACCESO -->
+        <li>
+          <a href="./login.html" class="btn-acceso">Acceso</a>
+        </li>
+        <li>
+  <button id="musicToggle" class="btn-musica">🔊 Música</button>
+</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
@@ -39,44 +49,72 @@
           únicas. Creamos soluciones tecnológicas que impulsan tu negocio hacia
           el futuro.
         </p>
-        <a href="#contacto" class="btn">Contáctanos</a>
+        <a href="./contacto.html" class="btn">Contáctanos</a>
       </div>
     </section>
 
-    <!-- Sección de Misión, Visión y Políticas -->
-    <section class="section" id="mision-vision">
-      <div class="container">
-        <h2 class="section-title">Nuestra Empresa</h2>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3><i>🎯</i>Misión</h3>
-            <p>
-              Proporcionar soluciones tecnológicas innovadoras y de alta calidad
-              que impulsen la transformación digital de nuestros clientes,
-              facilitando su adaptación a un entorno empresarial en constante
-              evolución.
-            </p>
-          </div>
-          <div class="about-card">
-            <h3><i>👁️</i>Visión</h3>
-            <p>
-              Ser la empresa líder en soluciones digitales en Latinoamérica,
-              reconocida por nuestra capacidad de innovación, calidad de
-              servicio y compromiso con el éxito de nuestros clientes.
-            </p>
-          </div>
-          <div class="about-card">
-            <h3><i>⭐</i>Políticas de Calidad</h3>
-            <p>
-              Nos comprometemos a ofrecer productos y servicios que superen las
-              expectativas de nuestros clientes, manteniendo altos estándares de
-              calidad, innovación continua y mejora permanente en todos nuestros
-              procesos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="sobre-mipc">
+  <div class="container sobre-content">
+
+    <div class="sobre-texto">
+      <h2>Sobre <span>MIPC Virtual</span></h2>
+      <p>
+        En <strong>MIPC Virtual</strong> somos una empresa especializada en soluciones tecnológicas orientadas 
+        a mejorar el rendimiento, la organización y la productividad de negocios, instituciones y usuarios 
+        que buscan herramientas confiables y de última generación.  
+        Nuestro objetivo es brindar equipos, infraestructura y servicios capaces de adaptarse a cada 
+        necesidad, garantizando estabilidad, soporte y un ecosistema digital eficiente.
+      </p>
+      <p>
+        Con una amplia gama de productos que abarcan computadoras, servidores, estaciones de trabajo, 
+        redes, software y accesorios, nos comprometemos a ofrecer soluciones completas para todo tipo de 
+        entorno profesional o doméstico.  
+        Nuestro enfoque está en que cada cliente encuentre la herramienta ideal para alcanzar el máximo 
+        desempeño en sus actividades.
+      </p>
+    </div>
+
+    <div class="sobre-imagenes">
+      <img src="img/tecnologia.webp" alt="Tecnología MIPC Virtual">
+      <img src="img/soluciones.jpg" alt="Soluciones Digitales">
+    </div>
+
+  </div>
+</section>
+
+<!-- TARJETAS DE VALORES -->
+<section class="mipc-servicios">
+  <div class="container tarjetas">
+
+    <div class="tarjeta">
+      <img src="img/alto.jpeg" alt="Equipos de alto rendimiento">
+      <h3>Equipos de Alto Rendimiento</h3>
+      <p>
+        Computadoras, laptops, estaciones de trabajo y hardware especializado para 
+        tareas profesionales, diseño, programación, gaming y trabajo empresarial.
+      </p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/infraestructura.webp" alt="Infraestructura profesional">
+      <h3>Infraestructura Profesional</h3>
+      <p>
+        Servidores, almacenamiento en red, redes seguras, cableado y soluciones 
+        empresariales escalables para empresas de cualquier tamaño.
+      </p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/soporte.jpg" alt="Soporte y asistencia">
+      <h3>Soporte y Asistencia</h3>
+      <p>
+        Acompañamiento técnico, actualizaciones, diagnósticos y soluciones 
+        rápidas para garantizar la continuidad de las operaciones.
+      </p>
+    </div>
+
+  </div>
+</section>
 
     <!-- Sección de Video -->
     <section class="section" id="video">
@@ -85,16 +123,18 @@
         <div class="video-section">
           <div class="video-embed-container">
             <!-- Video embebido de YouTube que se reproduce al hacer clic -->
-            <iframe 
-              src="https://www.youtube.com/embed/HFmBBo9qCjg?rel=0&modestbranding=1&autohide=1&showinfo=0" 
-              title="Video Corporativo Mipc Virtual" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
+            <iframe
+              src="https://www.youtube.com/embed/HFmBBo9qCjg?rel=0&modestbranding=1&autohide=1&showinfo=0"
+              title="Video Corporativo Mipc Virtual"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
             </iframe>
           </div>
-          <p style="text-align: center; margin-top: 15px; color: #666;">
-            Haz clic en el video para reproducir y conocer más sobre la Informática
+          <p style="text-align: center; margin-top: 15px; color: #666">
+            Haz clic en el video para reproducir y conocer más sobre la
+            Informática
           </p>
         </div>
       </div>
@@ -237,63 +277,11 @@
       </div>
     </section>
 
-   <!-- Sección de Música
-    <section class="section" id="musica">
-      <div class="container">
-        <h2 class="section-title">Música Corporativa</h2>
-        <div class="music-section">
-          <div class="music-container">
-            <div class="music-placeholder">
-              <div class="music-icon">♪</div>
-              <h3>Música de Fondo para Presentaciones</h3>
-              <p>Composición original creada para Mipc Virtual</p>
-              <button class="btn" id="playMusicBtn">Reproducir Música</button>
-              <audio id="audioCorporativo">
-                <source
-                  src="music/sweet-life-luxury-chill-438146.mp3"
-                  type="audio/mp3"
-                />
-                Tu navegador no soporta el elemento de audio.
-              </audio>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
 
 
     <!-- Sección de Música MODIFICADA -->
-   <section class="section" id="musica">
-      <div class="container">
-        <h2 class="section-title">Música Corporativa</h2>
-        <div class="music-section">
-          <div class="music-container">
-            <div class="music-placeholder">
-              <div class="music-icon">♪</div>
-              <h3>Música de Fondo para Presentaciones</h3>
-              <p>Composición original creada para Mipc Virtual</p>
-              
-              <!-- Botón único Play/Stop -->
-              <button class="music-toggle-btn" id="musicToggleBtn">
-                <span id="musicIcon">▶</span>
-                <span id="musicText">Reproducir Música</span>
-              </button>
-              
-              <div class="music-status" id="musicStatus">Listo para reproducir</div>
-              
-              <audio id="audioCorporativo">
-                <source
-                  src="music/sweet-life-luxury-chill-438146.mp3"
-                  type="audio/mp3"
-                />
-                Tu navegador no soporta el elemento de audio.
-              </audio>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <audio id="bg-music" src="music/sweet-life-luxury-chill-438146.mp3" autoplay loop muted playsinline></audio>
+
 
 
     <!-- Sección de Ubicación -->
@@ -304,7 +292,7 @@
           <div class="location-container">
             <div class="map-placeholder">
               <h3>Mapa de Ubicación</h3>
-            
+
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6858.844674465243!2d-103.32796285292434!3d20.655915197354645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b23a9bbba80d%3A0xdacdb7fd592feb90!2sCentro%20Universitario%20de%20Ciencias%20Exactas%20e%20Ingenier%C3%ADas%20(CUCEI)!5e0!3m2!1ses-419!2smx!4v1764174275190!5m2!1ses-419!2smx"
                 width="400"
@@ -314,12 +302,12 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-             
             </div>
             <div class="location-info">
               <h3>Oficinas Centrales</h3>
-                <p>Blvd. Gral. Marcelino García Barragán 1421</p>
-              <p>Olímpica, 44430 Guadalajara, Jal.</p><br>
+              <p>Blvd. Gral. Marcelino García Barragán 1421</p>
+              <p>Olímpica, 44430 Guadalajara, Jal.</p>
+              <br />
               <p>
                 Nuestras instalaciones cuentan con tecnología de vanguardia y
                 espacios diseñados para fomentar la creatividad y colaboración.
@@ -335,227 +323,7 @@
       </div>
     </section>
 
-    <!-- Sección de Login -->
-    <section class="section" id="login">
-      <div class="container">
-        <h2 class="section-title">Acceso de Usuarios</h2>
-        <div class="login-section">
-          <div class="login-container">
-            <h3 style="text-align: center; margin-bottom: 20px">
-              Iniciar Sesión
-            </h3>
-            <form id="loginForm">
-              <div class="form-group">
-                <label for="username">Usuario</label>
-                <input
-                  type="text"
-                  id="username"
-                  placeholder="Ingresa tu usuario"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Ingresa tu contraseña"
-                  required
-                />
-              </div>
-              <button type="submit" class="btn" style="width: 100%">
-                Ingresar
-              </button>
-            </form>
-            <p style="text-align: center; margin-top: 15px">
-              <a href="#" style="color: var(--secondary)"
-                >¿Olvidaste tu contraseña?</a
-              >
-            </p>
-            <p style="text-align: center; margin-top: 10px">
-              ¿No tienes cuenta?
-              <a href="#" style="color: var(--secondary)">Regístrate aquí</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section class="section" id="contacto">
-      <div class="container">
-        <h2 class="section-title">Contáctanos</h2>
-        <div class="contact-section">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h3 style="margin-bottom: 20px">Envíanos un mensaje</h3>
-              <form id="contactForm">
-                <div class="form-group">
-                  <label for="name">Nombre</label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Tu nombre completo"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="tu.email@ejemplo.com"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="subject">Asunto</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    placeholder="Asunto del mensaje"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea
-                    id="message"
-                    rows="5"
-                    placeholder="Escribe tu mensaje aquí..."
-                    style="
-                      width: 100%;
-                      padding: 12px;
-                      border: 1px solid #ddd;
-                      border-radius: 4px;
-                      font-size: 1rem;
-                    "
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar Mensaje</button>
-              </form>
-            </div>
-            <div class="contact-info">
-              <h3>Información de Contacto</h3>
-              <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div>
-                  <h4>Dirección</h4>
-                  <p>
-                    Blvd. Gral. Marcelino García Barragán 1421, Olímpica, 44430
-                    Guadalajara, Jal.
-                  </p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div>
-                  <h4>Teléfono</h4>
-                  <p>+52 55 1234 5678</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <div>
-                  <h4>Email</h4>
-                  <p>info@mipcvirtual.com</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">🕒</div>
-                <div>
-                  <h4>Horario de Atención</h4>
-                  <p>Lunes a Viernes: 9:00 - 18:00</p>
-                  <p>Sábados: 10:00 - 14:00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de FAQ -->
-    <section class="section" id="faq">
-      <div class="container">
-        <h2 class="section-title">Preguntas Frecuentes</h2>
-        <div class="faq-section">
-          <div class="faq-container">
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>¿Qué servicios ofrece Mipc Virtual?</span>
-                <span>+</span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  Ofrecemos una amplia gama de servicios digitales que incluyen
-                  desarrollo web, aplicaciones móviles, soluciones en la nube,
-                  diseño UX/UI, ciberseguridad y analítica de datos.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>¿Cuál es el tiempo de entrega de un proyecto?</span>
-                <span>+</span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  El tiempo de entrega varía según la complejidad del proyecto.
-                  Para un sitio web corporativo básico, el tiempo promedio es de
-                  4-6 semanas. Proyectos más complejos pueden tomar de 8 a 12
-                  semanas o más.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <span
-                  >¿Ofrecen soporte después de la entrega del proyecto?</span
-                >
-                <span>+</span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  Sí, ofrecemos diferentes planes de soporte y mantenimiento
-                  según las necesidades de cada cliente, que incluyen
-                  actualizaciones, corrección de errores y mejoras.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>¿Trabajan con empresas internacionales?</span>
-                <span>+</span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  Sí, tenemos experiencia trabajando con clientes de diferentes
-                  países y adaptamos nuestros procesos para cumplir con los
-                  requerimientos internacionales.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>¿Qué metodologías de desarrollo utilizan?</span>
-                <span>+</span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  Utilizamos metodologías ágiles como Scrum y Kanban, lo que nos
-                  permite adaptarnos a los cambios y mantener una comunicación
-                  constante con nuestros clientes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
+      <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
@@ -575,10 +343,10 @@
           <div class="footer-column">
             <h3>Enlaces Rápidos</h3>
             <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#video">Video</a></li>
-              <li><a href="#computadoras">Equipos</a></li>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./catalogo.html">Catalogo</a></li>
+              <li><a href="./ubicacion.html">Ubicación</a></li>
+              <li><a href="./faq.html">Preguntas Frecuentes</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </div>
@@ -604,115 +372,53 @@
           </div>
         </div>
         <div class="copyright">
-          <p>&copy; 2023 Mipc Virtual. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Mipc Virtual. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
 
-   
 
-   
-    <!-- <script src="index.js"></script> -->
-     <script>// Funcionalidad para el menú móvil
-      document.getElementById("mobileMenuBtn").addEventListener("click", function () {
-        const mobileMenu = document.getElementById("mobileMenu");
-        mobileMenu.classList.toggle("active");
+  <!-- audio -->
+
+
+<script>
+  const audio = document.getElementById("bg-music");
+  const toggleBtn = document.getElementById("musicToggle");
+
+  let isPlaying = false;
+
+  // Intento de autoplay silencioso
+  audio.muted = true;
+  audio.play()
+    .then(() => {
+      setTimeout(() => {
+        audio.muted = false;
+        isPlaying = true;
+        toggleBtn.textContent = "⏸️ Detener Música";
+      }, 100);
+    })
+    .catch(() => {
+      // Si falla el autoplay, botón empieza en modo "Play"
+      toggleBtn.textContent = "▶️ Reproducir Música";
+    });
+
+  toggleBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      audio.pause();
+      isPlaying = false;
+      toggleBtn.textContent = "▶️ Reproducir Música";
+    } else {
+      audio.play().then(() => {
+        audio.muted = false;
+        isPlaying = true;
+        toggleBtn.textContent = "⏸️ Detener Música";
       });
+    }
+  });
+</script>
 
-      // Funcionalidad para las preguntas frecuentes
-      const faqQuestions = document.querySelectorAll(".faq-question");
-      faqQuestions.forEach((question) => {
-        question.addEventListener("click", () => {
-          const faqItem = question.parentElement;
-          faqItem.classList.toggle("active");
 
-          // Cambiar el símbolo + por - cuando está activo
-          const symbol = question.querySelector("span:last-child");
-          symbol.textContent = faqItem.classList.contains("active") ? "-" : "+";
-        });
-      });
 
-      // Funcionalidad para el botón de música (Play/Stop)
-      const musicToggleBtn = document.getElementById("musicToggleBtn");
-      const musicIcon = document.getElementById("musicIcon");
-      const musicText = document.getElementById("musicText");
-      const musicStatus = document.getElementById("musicStatus");
-      const audioCorporativo = document.getElementById("audioCorporativo");
-      
-      let isPlaying = false;
-      
-      musicToggleBtn.addEventListener("click", function() {
-        if (isPlaying) {
-          // Si está reproduciendo, detener
-          audioCorporativo.pause();
-          audioCorporativo.currentTime = 0;
-          musicIcon.textContent = "▶";
-          musicText.textContent = "Reproducir Música";
-          musicStatus.textContent = "Música detenida";
-          musicToggleBtn.classList.remove("playing");
-          isPlaying = false;
-        } else {
-          // Si está detenido, reproducir
-          audioCorporativo.play();
-          musicIcon.textContent = "⏹";
-          musicText.textContent = "Detener Música";
-          musicStatus.textContent = "Reproduciendo música...";
-          musicToggleBtn.classList.add("playing");
-          isPlaying = true;
-        }
-      });
-      
-      // Cuando el audio termina naturalmente
-      audioCorporativo.addEventListener("ended", function() {
-        musicIcon.textContent = "▶";
-        musicText.textContent = "Reproducir Música";
-        musicStatus.textContent = "Música finalizada";
-        musicToggleBtn.classList.remove("playing");
-        isPlaying = false;
-      });
 
-      // Funcionalidad para el formulario de login
-      document.getElementById("loginForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert(
-          "Inicio de sesión simulado. En una implementación real, se enviarían los datos al servidor."
-        );
-        // Aquí normalmente enviaríamos los datos al servidor
-        this.reset();
-      });
-
-      // Funcionalidad para el formulario de contacto
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert(
-          "Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto."
-        );
-        // Aquí normalmente enviaríamos los datos al servidor
-        this.reset();
-      });
-
-      // Smooth scrolling para enlaces internos
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: "smooth",
-            });
-
-            // Cerrar menú móvil si está abierto
-            const mobileMenu = document.getElementById("mobileMenu");
-            if (mobileMenu.classList.contains("active")) {
-              mobileMenu.classList.remove("active");
-            }
-          }
-        });
-      });</script>
   </body>
 </html>
